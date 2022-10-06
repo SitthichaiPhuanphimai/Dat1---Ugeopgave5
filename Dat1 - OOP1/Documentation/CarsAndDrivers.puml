@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/object-diagram
+!pragma layout smetana
+
+Class Main
+
+
+Main : - Driver driver;
+Main : - Car car;
+Main : + void main()
+
+Main *-- Driver
+Main *-- Car
+
+Class Driver
+Driver : - String name;
+Driver : - int age;
+Driver : + Driver(String name, int age)
+Driver : + String toString()
+
+Class Car
+
+Car "Has a   " *-- Driver
+
+Car : - String make;
+Car : - String model;
+Car : - int year;
+Car : - String bodyStyle;
+Car : - Driver driver;
+Car : + Car(String make, String model, int year, String bodyStyle)
+Car : + Driver getDriver()
+Car : + Driver setDriver(Driver driver)
+Car : + Driver toString()
+
+
+
+@enduml
