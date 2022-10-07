@@ -18,6 +18,11 @@ public class Building {
     }
 
     //getter
+
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
+
     public int getNumberOfBathrooms() {
         return numberOfBathrooms;
     }

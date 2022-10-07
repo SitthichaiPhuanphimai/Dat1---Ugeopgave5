@@ -5,11 +5,9 @@
 Class Main
 
 
-Main : - Driver driver;
-Main : - Car car;
+
 Main : + void main()
 
-Main *-- Driver
 Main *-- Car
 
 Class Driver

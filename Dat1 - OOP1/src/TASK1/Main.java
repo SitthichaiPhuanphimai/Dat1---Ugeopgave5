@@ -14,7 +14,7 @@ public class Main {
 
         Car myCar2 = new Car("Volvo", "XC60", 2022, "SUV");
 
-        myCar.setDriver(myDriver);
+        myCar2.setDriver(myDriver);
 
         System.out.println(myCar2.toString());
         System.out.println(myDriver.toString());
